@@ -1,0 +1,3 @@
+-- Autocmds会在VeryLazy事件上自动加载
+-- 默认设置的autocmds：https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
+-- 在这里添加任何额外的autocmds
