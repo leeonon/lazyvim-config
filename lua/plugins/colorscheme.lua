@@ -1,10 +1,12 @@
 -- https://github.com/catppuccin/nvim/discussions/323
 return {
   { "shaunsingh/nord.nvim" },
+  -- catppuccin
   {
     "catppuccin/nvim",
     name = "catppuccin",
     opts = {
+      transparent = true,
       term_colors = true,
       transparent_background = false,
       styles = {
@@ -35,7 +37,7 @@ return {
       },
     },
   },
-
+  -- solarized
   {
     "craftzdog/solarized-osaka.nvim",
     name = "solarized-osaka",
@@ -45,8 +47,22 @@ return {
     opts = function()
       return {
         transparent = true,
+        styles = {
+          sidebars = 'transparent',
+        },
       }
     end,
+  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    opts = {
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      }
+    },
   },
 
   {

@@ -4,6 +4,10 @@
 --
 require("config/which-key")
 
+local discipline = require("custom.discipline")
+
+discipline.cowboy()
+
 local keymap = vim.keymap
 
 keymap.set("i", "jk", "<Esc>")
