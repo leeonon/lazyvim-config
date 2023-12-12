@@ -4,14 +4,18 @@
 --
 require("config/which-key")
 
-local discipline = require("custom.discipline")
+-- local discipline = require("custom.discipline")
 
-discipline.cowboy()
+-- discipline.cowboy()
 
 local keymap = vim.keymap
 
 keymap.set("i", "jk", "<Esc>")
 keymap.set("n", "<c-a>", "ggVG")
+
+keymap.set('n', '<leader>q', '<cmd>q<cr>')
+keymap.set('n', '<leader>w', '<cmd>w<cr>')
+keymap.set('n', '<leader>x', '<cmd>x<cr>')
 
 -- 快捷聚焦 neotree
 keymap.set("n", "<C-e>", ":Neotree<CR>", {})

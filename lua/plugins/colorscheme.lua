@@ -1,5 +1,6 @@
 -- https://github.com/catppuccin/nvim/discussions/323
 return {
+  -- add gruvbox
   { "shaunsingh/nord.nvim" },
   -- catppuccin
   {
@@ -41,7 +42,6 @@ return {
   {
     "craftzdog/solarized-osaka.nvim",
     name = "solarized-osaka",
-    branch = "osaka",
     lazy = true,
     priority = 1000,
     opts = function()
@@ -68,7 +68,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "solarized-osaka",
     },
   },
 }
