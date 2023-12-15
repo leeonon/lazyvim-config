@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 vim.opt.list = false
-
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
+
+vim.g.transparent_background = true

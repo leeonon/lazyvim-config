@@ -11,10 +11,17 @@ return {
     ensure_installed = {
       "lua-language-server",
       'prettierd',
+      "flake8",
       "stylua",
+      "selene",
+      "luacheck",
       "shellcheck",
       "shfmt",
-      "flake8",
+      "tailwindcss-language-server",
+      "typescript-language-server",
+      "css-lsp",
+      "html-lsp",
+      "htmlhint"
     },
   },
 }

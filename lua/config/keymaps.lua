@@ -4,8 +4,7 @@
 --
 require("config/which-key")
 
--- local discipline = require("custom.discipline")
-
+-- local discipline = require("utils.discipline")
 -- discipline.cowboy()
 
 local keymap = vim.keymap
@@ -13,12 +12,12 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<Esc>")
 keymap.set("n", "<c-a>", "ggVG")
 
-keymap.set('n', '<leader>q', '<cmd>q<cr>')
-keymap.set('n', '<leader>w', '<cmd>w<cr>')
-keymap.set('n', '<leader>x', '<cmd>x<cr>')
+keymap.set("n", "<leader>q", "<cmd>q<cr>")
+keymap.set("n", "<leader>w", "<cmd>w<cr>")
+keymap.set("n", "<leader>x", "<cmd>x<cr>")
 
 -- 快捷聚焦 neotree
-keymap.set("n", "<C-e>", ":Neotree<CR>", {})
+keymap.set("n", "<C-e>", "<cmd>:Neotree<CR>", {})
 
 -- 快速切换插件
 keymap.set("n", "<leader>i", "<cmd>ToggleAlternate<cr>")
