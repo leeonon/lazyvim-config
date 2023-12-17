@@ -1,13 +1,11 @@
--- keymap在VeryLazy事件上自动加载
--- 默认的键映射总是设置:https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- 在这里添加任何额外的键映射
---
-require("config/which-key")
+-- https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 
 -- local discipline = require("utils.discipline")
 -- discipline.cowboy()
 
 local keymap = vim.keymap
+
+-- 删除默认的键映射
 
 keymap.set("i", "jk", "<Esc>")
 keymap.set("n", "<c-a>", "ggVG")
@@ -21,6 +19,22 @@ keymap.set("n", "<C-e>", "<cmd>:Neotree<CR>", {})
 
 -- 快速切换插件
 keymap.set("n", "<leader>i", "<cmd>ToggleAlternate<cr>")
+
+-- lspsaga key map
+keymap.set('n', '[d', '<cmd>Lspsaga diagnostic_jump_prev<cr>', {
+  desc = "💢 Prev Diagnostic",
+})
+keymap.set('n', ']d', '<cmd>Lspsaga diagnostic_jump_next<cr>', {
+  desc = "💢 Next Diagnostic",
+})
+keymap.set('n', '<leader>o', '<cmd>Lspsaga outline<cr>', {
+  desc = "🔖 Lspaga Outline",
+})
+keymap.set('n', '<leader>t', '<cmd>Lspsaga term_toggle<cr>', {
+  desc = "🖥️ Lspaga 终端",
+})
+
+-- legendary
 
 local legendary = require("legendary")
 legendary.keymaps({

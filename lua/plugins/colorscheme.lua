@@ -1,12 +1,13 @@
 -- https://github.com/catppuccin/nvim/discussions/323
--- opts lazy 为 true 时无法通过 leader uC 快速预览主题
+-- lazy = false 可以编辑器中 <leader>uC 快速切换
 return {
   -- add gruvbox
-  { "shaunsingh/nord.nvim" },
+  { "ellisonleao/gruvbox.nvim" },
   -- catppuccin
   {
     "catppuccin/nvim",
     name = "catppuccin",
+    lazy = false,
     opts = {
       transparent = true,
       term_colors = true,
@@ -42,25 +43,18 @@ return {
     end,
   },
   {
-    "folke/tokyonight.nvim",
+    "bluz71/vim-nightfly-colors",
+    name = "nightfly",
     lazy = false,
-    opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-    },
+    priority = 1000,
   },
-
-  { "kepano/flexoki-neovim", name = "flexoki" },
-
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "solarized-osaka",
-      -- colorscheme = "catppuccin-mocha",
-      -- colorscheme = "flexoki",
+      -- colorscheme = "solarized-osaka",
+      colorscheme = "catppuccin",
+      -- colorscheme = "gruvbox",
+      -- colorscheme = "nightfly",
     },
   },
 }

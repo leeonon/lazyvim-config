@@ -23,7 +23,7 @@ return {
         vim.bo[ev.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
 
         vim.keymap.set("n", "gd", "<cmd>Lspsaga goto_definition<cr>", { buffer = ev.buf })
-        vim.keymap.set("n", "<space>r", "<cmd>Lspsaga rename<cr>", { buffer = ev.buf, desc = "重命名" })
+        vim.keymap.set("n", "<space>r", "<cmd>Lspsaga rename<cr>", { buffer = ev.buf, desc = "✍️  Lspsaga Rename" })
         vim.keymap.set({ "n", "v" }, "<space>ca", "<cmd>Lspsaga code_action<cr>", { buffer = ev.buf })
         vim.keymap.set("n", "gr", builtin.lsp_references, { buffer = ev.buf })
       end,

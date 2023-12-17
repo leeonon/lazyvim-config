@@ -3,13 +3,12 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = function(_, opts)
-    opts.sources = { "filesystem", "git_status" }
-    opts.source_selector = {
-      winbar = false,
-    }
-    opts.window.position = "left"
-    opts.window.mappings.o = "open"
-    opts.window.width = 35
-    opts.default_component_configs.indent.with_markers = false
+    -- opts.sources = { "filesystem", "git_status" }
+    -- opts.source_selector = {
+    --   winbar = false,
+    -- }
+    -- opts.window.position = "left"
+    -- opts.window.mappings.o = "open"
+    -- opts.window.width = 35
   end,
 }

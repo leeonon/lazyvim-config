@@ -1,6 +1,6 @@
 {
   "setup": {
-    "prefix": ["rf"],
+    "prefix": ["rfts"],
     "body": [
       "import {FC, ReactNode} from 'react'",
       "",
