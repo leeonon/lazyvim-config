@@ -1,4 +1,8 @@
 -- change some telescope options and a keymap to browse plugin files
+-- 如果报 fzf 扩展未安装的错误
+-- 进入到 telescope-fzf-native 安装目录 - ~/.local/share/nvim/lazy/telescope-fzf-native.nvim
+-- 执行 make 命令
+-- 参考:https://github.com/AstroNvim/AstroNvim/issues/58
 return {
   "telescope.nvim",
   dependencies = {
