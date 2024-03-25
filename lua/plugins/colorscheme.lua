@@ -9,7 +9,7 @@ return {
     name = "catppuccin",
     lazy = false,
     opts = {
-      transparent = true,
+      transparent = false,
       term_colors = true,
       transparent_background = vim.g.transparent_background,
       color_overrides = {
@@ -51,8 +51,8 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "solarized-osaka",
-      colorscheme = "catppuccin",
+      colorscheme = "solarized-osaka",
+      -- colorscheme = "catppuccin",
       -- colorscheme = "gruvbox",
       -- colorscheme = "nightfly",
     },
